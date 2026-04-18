@@ -1,6 +1,7 @@
+import "dotenv/config"
+import "@opentelemetry/auto-instrumentations-node/register"
 import { fastify } from 'fastify'
 import fastifyCors from "@fastify/cors"
-import "dotenv/config"
 import { 
   serializerCompiler,
   validatorCompiler,
